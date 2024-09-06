@@ -1,402 +1,402 @@
 [
-	{
+  {
     "level": 19,
-		"rank_en": "General",
-		"rank_fr": "Général",
-		"abbr_en": "Gen",
-		"abbr_fr": "gén",
-		"category_en": "General/Flag Officers",
-		"category_fr": "Officiers généraux",
-		"element": ["CA", "RCAF"]
-	},
-	{
-		"level": 19,
-		"rank_en": "Admiral",
-		"rank_fr": "Amiral",
-		"abbr_en": "Adm",
-		"abbr_fr": "am",
-		"category_en": "General/Flag Officers",
-		"category_fr": "Officiers généraux",
-		"element": ["RCN"]
-	},
-	{
-		"level": 18,
-		"rank_en": "Lieutenant-General",
-		"rank_fr": "Lieutenant-général",
-		"abbr_en": "LGen",
-		"abbr_fr": "lgén",
-		"category_en": "General/Flag Officers",
-		"category_fr": "Officiers généraux",
-		"element": ["CA", "RCAF"]
-	},
-	{
-		"level": 18,
-		"rank_en": "Vice-Admiral",
-		"rank_fr": "Vice-amiral",
-		"abbr_en": "VAdm",
-		"abbr_fr": "vam",
-		"category_en": "General/Flag Officers",
-		"category_fr": "Officiers généraux",
-		"element": ["RCN"]
-	},
-	{
-		"level": 17,
-		"rank_en": "Major-General",
-		"rank_fr": "Major-général",
-		"abbr_en": "MGen",
-		"abbr_fr": "mgén",
-		"category_en": "General/Flag Officers",
-		"category_fr": "Officiers généraux",
-		"element": ["CA", "RCAF"]
-	},
-	{
-		"level": 17,
-		"rank_en": "Rear-Admiral",
-		"rank_fr": "Contre-amiral",
-		"abbr_en": "RAdm",
-		"abbr_fr": "cam",
-		"category_en": "General/Flag Officers",
-		"category_fr": "Officiers généraux",
-		"element": ["RCN"]
-	},
-	{
-		"level": 16,
-		"rank_en": "Brigadier-General",
-		"rank_fr": "Brigadier-général",
-		"abbr_en": "BGen",
-		"abbr_fr": "bgén",
-		"category_en": "General/Flag Officers",
-		"category_fr": "Officiers généraux",
-		"element": ["CA", "RCAF"]
-	},
-	{
-		"level": 16,
-		"rank_en": "Commodore",
-		"rank_fr": "Commodore",
-		"abbr_en": "Cmdre",
-		"abbr_fr": "cmdre",
-		"category_en": "General/Flag Officers",
-		"category_fr": "Officiers généraux",
-		"element": ["RCN"]
-	},
-	{
-		"level": 15,
-		"rank_en": "Colonel",
-		"rank_fr": "Colonel",
-		"abbr_en": "Col",
-		"abbr_fr": "col",
-		"category_en": "Senior Officers",
-		"category_fr": "Officiers supérieurs",
-		"element": ["CA", "RCAF"]
-	},
-	{
-		"level": 15,
-		"rank_en": "Captain(N)",
-		"rank_fr": "Capitaine de vaisseau",
-		"abbr_en": "Capt(N)",
-		"abbr_fr": "capv",
-		"category_en": "Senior Officers",
-		"category_fr": "Officiers supérieurs",
-		"element": ["RCN"]
-	},
-	{
-		"level": 14,
-		"rank_en": "Lieutenant-Colonel",
-		"rank_fr": "Lieutenant-colonel",
-		"abbr_en": "LCol",
-		"abbr_fr": "lcol",
-		"category_en": "Senior Officers",
-		"category_fr": "Officiers supérieurs",
-		"element": ["CA", "RCAF"]
-	},
-	{
-		"level": 14,
-		"rank_en": "Commander",
-		"rank_fr": "Capitaine de frégate",
-		"abbr_en": "Cdr",
-		"abbr_fr": "capf",
-		"category_en": "Senior Officers",
-		"category_fr": "Officiers supérieurs",
-		"element": ["RCN"]
-	},
-	{
-		"level": 13,
-		"rank_en": "Major",
-		"rank_fr": "Major",
-		"abbr_en": "Maj",
-		"abbr_fr": "maj",
-		"category_en": "Senior Officers",
-		"category_fr": "Officiers supérieurs",
-		"element": ["CA", "RCAF"]
-	},
-	{
-		"level": 13,
-		"rank_en": "Lieutenant-Commander",
-		"rank_fr": "Capitaine de corvette",
-		"abbr_en": "LCdr",
-		"abbr_fr": "capc",
-		"category_en": "Senior Officers",
-		"category_fr": "Officiers supérieurs",
-		"element": ["RCN"]
-	},
-	{
-		"level": 12,
-		"rank_en": "Captain",
-		"rank_fr": "Capitaine",
-		"abbr_en": "Capt",
-		"abbr_fr": "capt",
-		"category_en": "Junior Officers",
-		"category_fr": "Officiers subalternes",
-		"element": ["CA", "RCAF"]
-	},
-	{
-		"level": 12,
-		"rank_en": "Lieutenant(N)",
-		"rank_fr": "Lieutenant de vaisseau",
-		"abbr_en": "Lt(N)",
-		"abbr_fr": "ltv",
-		"category_en": "Junior Officers",
-		"category_fr": "Officiers subalternes",
-		"element": ["RCN"]
-	},
-	{
-		"level": 11,
-		"rank_en": "Lieutenant",
-		"rank_fr": "Lieutenant",
-		"abbr_en": "Lt",
-		"abbr_fr": "lt",
-		"category_en": "Junior Officers",
-		"category_fr": "Officiers subalternes",
-		"element": ["CA", "RCAF"]
-	},
-	{
-		"level": 11,
-		"rank_en": "Sub-Lieutenant",
-		"rank_fr": "Enseigne de vaisseau de 1re classe",
-		"abbr_en": "SLt",
-		"abbr_fr": "ens 1",
-		"category_en": "Junior Officers",
-		"category_fr": "Officiers subalternes",
-		"element": ["RCN"]
-	},
-	{
-		"level": 10,
-		"rank_en": "Second Lieutenant",
-		"rank_fr": "Sous-lieutenant",
-		"abbr_en": "2Lt",
-		"abbr_fr": "slt",
-		"category_en": "Junior Officers",
-		"category_fr": "Officiers subalternes",
-		"element": ["CA", "RCAF"]
-	},
-	{
-		"level": 10,
-		"rank_en": "Acting Sub-Lieutenant",
-		"rank_fr": "Enseigne de vaisseau de 2e classe",
-		"abbr_en": "A/SLt",
-		"abbr_fr": "ens 2",
-		"category_en": "Junior Officers",
-		"category_fr": "Officiers subalternes",
-		"element": ["RCN"]
-	},
-	{
-		"level": 9,
-		"rank_en": "Officer Cadet",
-		"rank_fr": "Élève-officier",
-		"abbr_en": "OCdt",
-		"abbr_fr": "élof",
-		"category_en": "Subordinate Officer",
-		"category_fr": "Officier subordonné",
-		"element": ["CA", "RCAF"]
-	},
-	{
-		"level": 9,
-		"rank_en": "Naval Cadet",
-		"rank_fr": "Aspirant de marine",
-		"abbr_en": "NCdt",
-		"abbr_fr": "aspm",
-		"category_en": "Subordinate Officer",
-		"category_fr": "Officier subordonné",
-		"element": ["RCN"]
-	},
-	{
-		"level": 8,
-		"rank_en": "Chief Warrant Officer",
-		"rank_fr": "Adjudant-chef",
-		"abbr_en": "CWO",
-		"abbr_fr": "adjuc",
-		"category_en": "Warrant Officers, Petty Officers and Senior Non-Commissioned Officers",
-		"category_fr": "Adjudants, officiers mariniers et sous-officiers supérieurs",
-		"element": ["CA", "RCAF"]
-	},
-	{
-		"level": 8,
-		"rank_en": "Chief Petty Officer 1st class",
-		"rank_fr": "Premier maître de 1re classe",
-		"abbr_en": "CPO 1",
-		"abbr_fr": "pm 1",
-		"category_en": "Warrant Officers, Petty Officers and Senior Non-Commissioned Officers",
-		"category_fr": "Adjudants, officiers mariniers et sous-officiers supérieurs",
-		"element": ["RCN"]
-	},
-	{
-		"level": 7,
-		"rank_en": "Master Warrant Officer",
-		"rank_fr": "Adjudant-maître",
-		"abbr_en": "MWO",
-		"abbr_fr": "adjum",
-		"category_en": "Warrant Officers, Petty Officers and Senior Non-Commissioned Officers",
-		"category_fr": "Adjudants, officiers mariniers et sous-officiers supérieurs",
-		"element": ["CA", "RCAF"]
-	},
-	{
-		"level": 7,
-		"rank_en": "Chief Petty Officer 2nd class",
-		"rank_fr": "Premier maître de 2e classe",
-		"abbr_en": "CPO 2",
-		"abbr_fr": "pm 2",
-		"category_en": "Warrant Officers, Petty Officers and Senior Non-Commissioned Officers",
-		"category_fr": "Adjudants, officiers mariniers et sous-officiers supérieurs",
-		"element": ["RCN"]
-	},
-	{
-		"level": 6,
-		"rank_en": "Warrant Officer",
-		"rank_fr": "Adjudant",
-		"abbr_en": "WO",
-		"abbr_fr": "adj",
-		"category_en": "Warrant Officers, Petty Officers and Senior Non-Commissioned Officers",
-		"category_fr": "Adjudants, officiers mariniers et sous-officiers supérieurs",
-		"element": ["CA", "RCAF"]
-	},
-	{
-		"level": 6,
-		"rank_en": "Petty Officer 1st class",
-		"rank_fr": "Maître de 1re classe",
-		"abbr_en": "PO 1",
-		"abbr_fr": "m 1",
-		"category_en": "Warrant Officers, Petty Officers and Senior Non-Commissioned Officers",
-		"category_fr": "Adjudants, officiers mariniers et sous-officiers supérieurs",
-		"element": ["RCN"]
-	},
-	{
-		"level": 5,
-		"rank_en": "Sergeant",
-		"rank_fr": "Sergent",
-		"abbr_en": "Sgt",
-		"abbr_fr": "stg",
-		"category_en": "Warrant Officers, Petty Officers and Senior Non-Commissioned Officers",
-		"category_fr": "Adjudants, officiers mariniers et sous-officiers supérieurs",
-		"element": ["CA", "RCAF"]
-	},
-	{
-		"level": 5,
-		"rank_en": "Petty Officer 2nd class",
-		"rank_fr": "Maître de 2e classe",
-		"abbr_en": "PO 2",
-		"abbr_fr": "m 2",
-		"category_en": "Warrant Officers, Petty Officers and Senior Non-Commissioned Officers",
-		"category_fr": "Adjudants, officiers mariniers et sous-officiers supérieurs",
-		"element": ["RCN"]
-	},
-	{
-		"level": 4,
-		"rank_en": "Master Corporal",
-		"rank_fr": "Caporal-chef",
-		"abbr_en": "MCpl",
-		"abbr_fr": "cplc",
-		"category_en": "Junior Non-Commissioned Members",
-		"category_fr": "Militaires du rang subalternes",
-		"element": ["CA", "RCAF"]
-	},
-	{
-		"level": 4,
-		"rank_en": "Master Sailor",
-		"rank_fr": "Matelot-chef",
-		"abbr_en": "MS",
-		"abbr_fr": "matc",
-		"category_en": "Junior Non-Commissioned Members",
-		"category_fr": "Militaires du rang subalternes",
-		"element": ["RCN"]
-	},
-	{
-		"level": 3,
-		"rank_en": "Corporal",
-		"rank_fr": "Caporal",
-		"abbr_en": "Cpl",
-		"abbr_fr": "cpl",
-		"category_en": "Junior Non-Commissioned Members",
-		"category_fr": "Militaires du rang subalternes",
-		"element": ["CA", "RCAF"]
-	},
-	{
-		"level": 3,
-		"rank_en": "Sailor 1st Class",
-		"rank_fr": "Matelot de 1re classe",
-		"abbr_en": "S1",
-		"abbr_fr": "mat 1",
-		"category_en": "Junior Non-Commissioned Members",
-		"category_fr": "Militaires du rang subalternes",
-		"element": ["RCN"]
-	},
-	{
-		"level": 2,
-		"rank_en": "Private (Trained)",
-		"rank_fr": "Soldat (formé)",
-		"abbr_en": "Pte (T)",
-		"abbr_fr": "sdt (f)",
-		"category_en": "Junior Non-Commissioned Members",
-		"category_fr": "Militaires du rang subalternes",
-		"element": ["CA"]
-	},
-	{
-		"level": 2,
-		"rank_en": "Aviator (Trained)",
-		"rank_fr": "Aviateur (formé)",
-		"abbr_en": "Avr (T)",
-		"abbr_fr": "avr (f)",
-		"category_en": "Junior Non-Commissioned Members",
-		"category_fr": "Militaires du rang subalternes",
-		"element": ["RCAF"]
-	},
-	{
-		"level": 2,
-		"rank_en": "Sailor 2nd Class",
-		"rank_fr": "Matelot de 2e classe",
-		"abbr_en": "S2",
-		"abbr_fr": "mat 2",
-		"category_en": "Junior Non-Commissioned Members",
-		"category_fr": "Militaires du rang subalternes",
-		"element": ["RCN"]
-	},
-	{
-		"level": 1,
-		"rank_en": "Private (Basic)",
-		"rank_fr": "Soldat (confirmé)",
-		"abbr_en": "Pte (B)",
-		"abbr_fr": "sdt (c)",
-		"category_en": "Junior Non-Commissioned Members",
-		"category_fr": "Militaires du rang subalternes",
-		"element": ["CA"]
-	},
-	{
-		"level": 1,
-		"rank_en": "Aviator (Basic)",
-		"rank_fr": "Aviateur (confirmé)",
-		"abbr_en": "Avr (B)",
-		"abbr_fr": "avr (c)",
-		"category_en": "Junior Non-Commissioned Members",
-		"category_fr": "Militaires du rang subalternes",
-		"element": ["RCAF"]
-	},
-	{
-		"level": 1,
-		"rank_en": "Sailor 3rd Class",
-		"rank_fr": "Matelot de 3e classe",
-		"abbr_en": "S3",
-		"abbr_fr": "mat 3",
-		"category_en": "Junior Non-Commissioned Members",
-		"category_fr": "Militaires du rang subalternes",
-		"element": ["RCN"]
-	},
+    "rank_en": "General",
+    "rank_fr": "Général",
+    "abbr_en": "Gen",
+    "abbr_fr": "gén",
+    "category_en": "General/Flag Officers",
+    "category_fr": "Officiers généraux",
+    "element": ["CA", "RCAF"]
+  },
+  {
+    "level": 19,
+    "rank_en": "Admiral",
+    "rank_fr": "Amiral",
+    "abbr_en": "Adm",
+    "abbr_fr": "am",
+    "category_en": "General/Flag Officers",
+    "category_fr": "Officiers généraux",
+    "element": ["RCN"]
+  },
+  {
+    "level": 18,
+    "rank_en": "Lieutenant-General",
+    "rank_fr": "Lieutenant-général",
+    "abbr_en": "LGen",
+    "abbr_fr": "lgén",
+    "category_en": "General/Flag Officers",
+    "category_fr": "Officiers généraux",
+    "element": ["CA", "RCAF"]
+  },
+  {
+    "level": 18,
+    "rank_en": "Vice-Admiral",
+    "rank_fr": "Vice-amiral",
+    "abbr_en": "VAdm",
+    "abbr_fr": "vam",
+    "category_en": "General/Flag Officers",
+    "category_fr": "Officiers généraux",
+    "element": ["RCN"]
+  },
+  {
+    "level": 17,
+    "rank_en": "Major-General",
+    "rank_fr": "Major-général",
+    "abbr_en": "MGen",
+    "abbr_fr": "mgén",
+    "category_en": "General/Flag Officers",
+    "category_fr": "Officiers généraux",
+    "element": ["CA", "RCAF"]
+  },
+  {
+    "level": 17,
+    "rank_en": "Rear-Admiral",
+    "rank_fr": "Contre-amiral",
+    "abbr_en": "RAdm",
+    "abbr_fr": "cam",
+    "category_en": "General/Flag Officers",
+    "category_fr": "Officiers généraux",
+    "element": ["RCN"]
+  },
+  {
+    "level": 16,
+    "rank_en": "Brigadier-General",
+    "rank_fr": "Brigadier-général",
+    "abbr_en": "BGen",
+    "abbr_fr": "bgén",
+    "category_en": "General/Flag Officers",
+    "category_fr": "Officiers généraux",
+    "element": ["CA", "RCAF"]
+  },
+  {
+    "level": 16,
+    "rank_en": "Commodore",
+    "rank_fr": "Commodore",
+    "abbr_en": "Cmdre",
+    "abbr_fr": "cmdre",
+    "category_en": "General/Flag Officers",
+    "category_fr": "Officiers généraux",
+    "element": ["RCN"]
+  },
+  {
+    "level": 15,
+    "rank_en": "Colonel",
+    "rank_fr": "Colonel",
+    "abbr_en": "Col",
+    "abbr_fr": "col",
+    "category_en": "Senior Officers",
+    "category_fr": "Officiers supérieurs",
+    "element": ["CA", "RCAF"]
+  },
+  {
+    "level": 15,
+    "rank_en": "Captain(N)",
+    "rank_fr": "Capitaine de vaisseau",
+    "abbr_en": "Capt(N)",
+    "abbr_fr": "capv",
+    "category_en": "Senior Officers",
+    "category_fr": "Officiers supérieurs",
+    "element": ["RCN"]
+  },
+  {
+    "level": 14,
+    "rank_en": "Lieutenant-Colonel",
+    "rank_fr": "Lieutenant-colonel",
+    "abbr_en": "LCol",
+    "abbr_fr": "lcol",
+    "category_en": "Senior Officers",
+    "category_fr": "Officiers supérieurs",
+    "element": ["CA", "RCAF"]
+  },
+  {
+    "level": 14,
+    "rank_en": "Commander",
+    "rank_fr": "Capitaine de frégate",
+    "abbr_en": "Cdr",
+    "abbr_fr": "capf",
+    "category_en": "Senior Officers",
+    "category_fr": "Officiers supérieurs",
+    "element": ["RCN"]
+  },
+  {
+    "level": 13,
+    "rank_en": "Major",
+    "rank_fr": "Major",
+    "abbr_en": "Maj",
+    "abbr_fr": "maj",
+    "category_en": "Senior Officers",
+    "category_fr": "Officiers supérieurs",
+    "element": ["CA", "RCAF"]
+  },
+  {
+    "level": 13,
+    "rank_en": "Lieutenant-Commander",
+    "rank_fr": "Capitaine de corvette",
+    "abbr_en": "LCdr",
+    "abbr_fr": "capc",
+    "category_en": "Senior Officers",
+    "category_fr": "Officiers supérieurs",
+    "element": ["RCN"]
+  },
+  {
+    "level": 12,
+    "rank_en": "Captain",
+    "rank_fr": "Capitaine",
+    "abbr_en": "Capt",
+    "abbr_fr": "capt",
+    "category_en": "Junior Officers",
+    "category_fr": "Officiers subalternes",
+    "element": ["CA", "RCAF"]
+  },
+  {
+    "level": 12,
+    "rank_en": "Lieutenant(N)",
+    "rank_fr": "Lieutenant de vaisseau",
+    "abbr_en": "Lt(N)",
+    "abbr_fr": "ltv",
+    "category_en": "Junior Officers",
+    "category_fr": "Officiers subalternes",
+    "element": ["RCN"]
+  },
+  {
+    "level": 11,
+    "rank_en": "Lieutenant",
+    "rank_fr": "Lieutenant",
+    "abbr_en": "Lt",
+    "abbr_fr": "lt",
+    "category_en": "Junior Officers",
+    "category_fr": "Officiers subalternes",
+    "element": ["CA", "RCAF"]
+  },
+  {
+    "level": 11,
+    "rank_en": "Sub-Lieutenant",
+    "rank_fr": "Enseigne de vaisseau de 1re classe",
+    "abbr_en": "SLt",
+    "abbr_fr": "ens 1",
+    "category_en": "Junior Officers",
+    "category_fr": "Officiers subalternes",
+    "element": ["RCN"]
+  },
+  {
+    "level": 10,
+    "rank_en": "Second Lieutenant",
+    "rank_fr": "Sous-lieutenant",
+    "abbr_en": "2Lt",
+    "abbr_fr": "slt",
+    "category_en": "Junior Officers",
+    "category_fr": "Officiers subalternes",
+    "element": ["CA", "RCAF"]
+  },
+  {
+    "level": 10,
+    "rank_en": "Acting Sub-Lieutenant",
+    "rank_fr": "Enseigne de vaisseau de 2e classe",
+    "abbr_en": "A/SLt",
+    "abbr_fr": "ens 2",
+    "category_en": "Junior Officers",
+    "category_fr": "Officiers subalternes",
+    "element": ["RCN"]
+  },
+  {
+    "level": 9,
+    "rank_en": "Officer Cadet",
+    "rank_fr": "Élève-officier",
+    "abbr_en": "OCdt",
+    "abbr_fr": "élof",
+    "category_en": "Subordinate Officer",
+    "category_fr": "Officier subordonné",
+    "element": ["CA", "RCAF"]
+  },
+  {
+    "level": 9,
+    "rank_en": "Naval Cadet",
+    "rank_fr": "Aspirant de marine",
+    "abbr_en": "NCdt",
+    "abbr_fr": "aspm",
+    "category_en": "Subordinate Officer",
+    "category_fr": "Officier subordonné",
+    "element": ["RCN"]
+  },
+  {
+    "level": 8,
+    "rank_en": "Chief Warrant Officer",
+    "rank_fr": "Adjudant-chef",
+    "abbr_en": "CWO",
+    "abbr_fr": "adjuc",
+    "category_en": "Warrant Officers, Petty Officers and Senior Non-Commissioned Officers",
+    "category_fr": "Adjudants, officiers mariniers et sous-officiers supérieurs",
+    "element": ["CA", "RCAF"]
+  },
+  {
+    "level": 8,
+    "rank_en": "Chief Petty Officer 1st class",
+    "rank_fr": "Premier maître de 1re classe",
+    "abbr_en": "CPO 1",
+    "abbr_fr": "pm 1",
+    "category_en": "Warrant Officers, Petty Officers and Senior Non-Commissioned Officers",
+    "category_fr": "Adjudants, officiers mariniers et sous-officiers supérieurs",
+    "element": ["RCN"]
+  },
+  {
+    "level": 7,
+    "rank_en": "Master Warrant Officer",
+    "rank_fr": "Adjudant-maître",
+    "abbr_en": "MWO",
+    "abbr_fr": "adjum",
+    "category_en": "Warrant Officers, Petty Officers and Senior Non-Commissioned Officers",
+    "category_fr": "Adjudants, officiers mariniers et sous-officiers supérieurs",
+    "element": ["CA", "RCAF"]
+  },
+  {
+    "level": 7,
+    "rank_en": "Chief Petty Officer 2nd class",
+    "rank_fr": "Premier maître de 2e classe",
+    "abbr_en": "CPO 2",
+    "abbr_fr": "pm 2",
+    "category_en": "Warrant Officers, Petty Officers and Senior Non-Commissioned Officers",
+    "category_fr": "Adjudants, officiers mariniers et sous-officiers supérieurs",
+    "element": ["RCN"]
+  },
+  {
+    "level": 6,
+    "rank_en": "Warrant Officer",
+    "rank_fr": "Adjudant",
+    "abbr_en": "WO",
+    "abbr_fr": "adj",
+    "category_en": "Warrant Officers, Petty Officers and Senior Non-Commissioned Officers",
+    "category_fr": "Adjudants, officiers mariniers et sous-officiers supérieurs",
+    "element": ["CA", "RCAF"]
+  },
+  {
+    "level": 6,
+    "rank_en": "Petty Officer 1st class",
+    "rank_fr": "Maître de 1re classe",
+    "abbr_en": "PO 1",
+    "abbr_fr": "m 1",
+    "category_en": "Warrant Officers, Petty Officers and Senior Non-Commissioned Officers",
+    "category_fr": "Adjudants, officiers mariniers et sous-officiers supérieurs",
+    "element": ["RCN"]
+  },
+  {
+    "level": 5,
+    "rank_en": "Sergeant",
+    "rank_fr": "Sergent",
+    "abbr_en": "Sgt",
+    "abbr_fr": "stg",
+    "category_en": "Warrant Officers, Petty Officers and Senior Non-Commissioned Officers",
+    "category_fr": "Adjudants, officiers mariniers et sous-officiers supérieurs",
+    "element": ["CA", "RCAF"]
+  },
+  {
+    "level": 5,
+    "rank_en": "Petty Officer 2nd class",
+    "rank_fr": "Maître de 2e classe",
+    "abbr_en": "PO 2",
+    "abbr_fr": "m 2",
+    "category_en": "Warrant Officers, Petty Officers and Senior Non-Commissioned Officers",
+    "category_fr": "Adjudants, officiers mariniers et sous-officiers supérieurs",
+    "element": ["RCN"]
+  },
+  {
+    "level": 4,
+    "rank_en": "Master Corporal",
+    "rank_fr": "Caporal-chef",
+    "abbr_en": "MCpl",
+    "abbr_fr": "cplc",
+    "category_en": "Junior Non-Commissioned Members",
+    "category_fr": "Militaires du rang subalternes",
+    "element": ["CA", "RCAF"]
+  },
+  {
+    "level": 4,
+    "rank_en": "Master Sailor",
+    "rank_fr": "Matelot-chef",
+    "abbr_en": "MS",
+    "abbr_fr": "matc",
+    "category_en": "Junior Non-Commissioned Members",
+    "category_fr": "Militaires du rang subalternes",
+    "element": ["RCN"]
+  },
+  {
+    "level": 3,
+    "rank_en": "Corporal",
+    "rank_fr": "Caporal",
+    "abbr_en": "Cpl",
+    "abbr_fr": "cpl",
+    "category_en": "Junior Non-Commissioned Members",
+    "category_fr": "Militaires du rang subalternes",
+    "element": ["CA", "RCAF"]
+  },
+  {
+    "level": 3,
+    "rank_en": "Sailor 1st Class",
+    "rank_fr": "Matelot de 1re classe",
+    "abbr_en": "S1",
+    "abbr_fr": "mat 1",
+    "category_en": "Junior Non-Commissioned Members",
+    "category_fr": "Militaires du rang subalternes",
+    "element": ["RCN"]
+  },
+  {
+    "level": 2,
+    "rank_en": "Private (Trained)",
+    "rank_fr": "Soldat (formé)",
+    "abbr_en": "Pte (T)",
+    "abbr_fr": "sdt (f)",
+    "category_en": "Junior Non-Commissioned Members",
+    "category_fr": "Militaires du rang subalternes",
+    "element": ["CA"]
+  },
+  {
+    "level": 2,
+    "rank_en": "Aviator (Trained)",
+    "rank_fr": "Aviateur (formé)",
+    "abbr_en": "Avr (T)",
+    "abbr_fr": "avr (f)",
+    "category_en": "Junior Non-Commissioned Members",
+    "category_fr": "Militaires du rang subalternes",
+    "element": ["RCAF"]
+  },
+  {
+    "level": 2,
+    "rank_en": "Sailor 2nd Class",
+    "rank_fr": "Matelot de 2e classe",
+    "abbr_en": "S2",
+    "abbr_fr": "mat 2",
+    "category_en": "Junior Non-Commissioned Members",
+    "category_fr": "Militaires du rang subalternes",
+    "element": ["RCN"]
+  },
+  {
+    "level": 1,
+    "rank_en": "Private (Basic)",
+    "rank_fr": "Soldat (confirmé)",
+    "abbr_en": "Pte (B)",
+    "abbr_fr": "sdt (c)",
+    "category_en": "Junior Non-Commissioned Members",
+    "category_fr": "Militaires du rang subalternes",
+    "element": ["CA"]
+  },
+  {
+    "level": 1,
+    "rank_en": "Aviator (Basic)",
+    "rank_fr": "Aviateur (confirmé)",
+    "abbr_en": "Avr (B)",
+    "abbr_fr": "avr (c)",
+    "category_en": "Junior Non-Commissioned Members",
+    "category_fr": "Militaires du rang subalternes",
+    "element": ["RCAF"]
+  },
+  {
+    "level": 1,
+    "rank_en": "Sailor 3rd Class",
+    "rank_fr": "Matelot de 3e classe",
+    "abbr_en": "S3",
+    "abbr_fr": "mat 3",
+    "category_en": "Junior Non-Commissioned Members",
+    "category_fr": "Militaires du rang subalternes",
+    "element": ["RCN"]
+  },
 ]
