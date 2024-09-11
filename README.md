@@ -7,13 +7,16 @@ Ranks in the Canadian Armed Forces mark a person's position in its hierarchical 
 This is a complete list of ranks within the Canadian Armed Forces (CAF). It includes both English and French versions of each rank.
 
 ### Rank Object Keys
-- `level`: The rank level. Multiple ranks will share a level, only seperated by element.
-- `rank_en`: The full rank name in English
-- `rank_fr`: The full rank name in French
-- `abbr_en`: The rank abbreviation in English
-- `abbr_fr`: The rank abbreviation in French
-- `category_en`: The category of the rank in English
-- `category_fr`: The category of the rank in French
+- `level`: The rank level. Multiple ranks will share a level, only seperated by element. 
+- `title`: The full rank title
+    - `en`: English text
+    - `fr`: French text
+- `abbreviation`: The rank abbreviation
+    - `en`: English text
+    - `fr`: French text
+- `category`: The category of the rank
+    - `en`: English text
+    - `fr`: French text
 - `element`: A list of CAF elements that use the rank (Options: CA, RCAF, RCN)
 
 ## Sources
