@@ -3,8 +3,8 @@ Current Version: v0.3
 
 Ranks in the Canadian Armed Forces mark a person's position in its hierarchical structure. As people gain more responsibility and authority, they earn promotions in rank.
 
-## [caf_ranks.json](caf_ranks.json)
-This is a complete list of ranks within the Canadian Armed Forces (CAF). It includes both English and French versions of each rank. A minified version of this dataset exists at [caf_ranks.min.json](caf_ranks.min.json)
+## [caf-ranks.json](caf-ranks.json)
+This is a complete list of ranks within the Canadian Armed Forces (CAF). It includes both English and French versions of each rank. A minified version of this dataset exists as [caf-ranks.min.json](caf-ranks.min.json) after running `python3 minify.py`.
 
 ### Rank Object Keys
 - `level`: The rank level. Multiple ranks will share a level, only seperated by element. 
