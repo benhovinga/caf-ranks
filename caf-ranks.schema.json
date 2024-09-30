@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CAF Ranks",
+  "description": "A list of Canadian Armed Forces Ranks",
+  "$defs":{
+    "bilingual": {
+      "type": "object",
+      "required": ["en", "fr"],
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "type": "string"
+        },
+        "fr": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "type": "array",
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": ["level", "element", "title", "abbreviation", "category"],
+    "properties": {
+      "level": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 19
+      },
+      "element": {
+        "type": "array",
+        "items": {
+          "enum": ["CA", "RCAF", "RCN"]
+        }
+      },
+      "title": {"$ref": "#/$defs/bilingual"},
+      "abbreviation": {"$ref": "#/$defs/bilingual"},
+      "category": {
+        "type": "object",
+        "required": ["en", "fr"],
+        "properties": {
+          "en": {
+            "enum": [
+              "General/Flag Officers",
+              "Senior Officers",
+              "Junior Officers",
+              "Subordinate Officer",
+              "Warrant Officers, Petty Officers and Senior Non-Commissioned Officers",
+              "Junior Non-Commissioned Members"
+            ]
+          },
+          "fr": {
+            "enum": [
+              "Officiers généraux",
+              "Officiers supérieurs",
+              "Officiers subalternes",
+              "Officier subordonné",
+              "Adjudants, officiers mariniers et sous-officiers supérieurs",
+              "Militaires du rang subalternes"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
