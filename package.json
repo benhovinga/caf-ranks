@@ -1,0 +1,25 @@
+{
+  "name": "@benhovinga/caf-ranks",
+  "version": "0.4.0",
+  "description": "Complete list of the Canadian Armed Forces rank structure in JSON format (bilingual)",
+  "main": "caf-ranks.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benhovinga/caf-ranks.git"
+  },
+  "keywords": [
+    "dataset",
+    "military",
+    "canadian armed forces",
+    "rank-structure"
+  ],
+  "author": "Ben Hovinga",
+  "license": "OGL-Canada-2.0",
+  "bugs": {
+    "url": "https://github.com/benhovinga/caf-ranks/issues"
+  },
+  "homepage": "https://github.com/benhovinga/caf-ranks#readme"
+}
