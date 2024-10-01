@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "CAF Ranks",
   "description": "A list of Canadian Armed Forces Ranks",
-  "$defs":{
+  "$defs": {
     "bilingual": {
       "type": "object",
       "required": ["en", "fr"],
@@ -34,8 +34,8 @@
           "enum": ["CA", "RCAF", "RCN"]
         }
       },
-      "title": {"$ref": "#/$defs/bilingual"},
-      "abbreviation": {"$ref": "#/$defs/bilingual"},
+      "title": { "$ref": "#/$defs/bilingual" },
+      "abbreviation": { "$ref": "#/$defs/bilingual" },
       "category": {
         "type": "object",
         "required": ["en", "fr"],
