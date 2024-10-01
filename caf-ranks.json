@@ -1,10 +1,7 @@
 [
   {
     "level": 19,
-    "element": [
-      "CA",
-      "RCAF"
-    ],
+    "element": ["CA", "RCAF"],
     "title": {
       "en": "General",
       "fr": "Général"
@@ -20,9 +17,7 @@
   },
   {
     "level": 19,
-    "element": [
-      "RCN"
-    ],
+    "element": ["RCN"],
     "title": {
       "en": "Admiral",
       "fr": "Amiral"
@@ -38,10 +33,7 @@
   },
   {
     "level": 18,
-    "element": [
-      "CA",
-      "RCAF"
-    ],
+    "element": ["CA", "RCAF"],
     "title": {
       "en": "Lieutenant-General",
       "fr": "Lieutenant-général"
@@ -57,9 +49,7 @@
   },
   {
     "level": 18,
-    "element": [
-      "RCN"
-    ],
+    "element": ["RCN"],
     "title": {
       "en": "Vice-Admiral",
       "fr": "Vice-amiral"
@@ -75,10 +65,7 @@
   },
   {
     "level": 17,
-    "element": [
-      "CA",
-      "RCAF"
-    ],
+    "element": ["CA", "RCAF"],
     "title": {
       "en": "Major-General",
       "fr": "Major-général"
@@ -94,9 +81,7 @@
   },
   {
     "level": 17,
-    "element": [
-      "RCN"
-    ],
+    "element": ["RCN"],
     "title": {
       "en": "Rear-Admiral",
       "fr": "Contre-amiral"
@@ -112,10 +97,7 @@
   },
   {
     "level": 16,
-    "element": [
-      "CA",
-      "RCAF"
-    ],
+    "element": ["CA", "RCAF"],
     "title": {
       "en": "Brigadier-General",
       "fr": "Brigadier-général"
@@ -131,9 +113,7 @@
   },
   {
     "level": 16,
-    "element": [
-      "RCN"
-    ],
+    "element": ["RCN"],
     "title": {
       "en": "Commodore",
       "fr": "Commodore"
@@ -149,10 +129,7 @@
   },
   {
     "level": 15,
-    "element": [
-      "CA",
-      "RCAF"
-    ],
+    "element": ["CA", "RCAF"],
     "title": {
       "en": "Colonel",
       "fr": "Colonel"
@@ -168,9 +145,7 @@
   },
   {
     "level": 15,
-    "element": [
-      "RCN"
-    ],
+    "element": ["RCN"],
     "title": {
       "en": "Captain(N)",
       "fr": "Capitaine de vaisseau"
@@ -186,10 +161,7 @@
   },
   {
     "level": 14,
-    "element": [
-      "CA",
-      "RCAF"
-    ],
+    "element": ["CA", "RCAF"],
     "title": {
       "en": "Lieutenant-Colonel",
       "fr": "Lieutenant-colonel"
@@ -205,9 +177,7 @@
   },
   {
     "level": 14,
-    "element": [
-      "RCN"
-    ],
+    "element": ["RCN"],
     "title": {
       "en": "Commander",
       "fr": "Capitaine de frégate"
@@ -223,10 +193,7 @@
   },
   {
     "level": 13,
-    "element": [
-      "CA",
-      "RCAF"
-    ],
+    "element": ["CA", "RCAF"],
     "title": {
       "en": "Major",
       "fr": "Major"
@@ -242,9 +209,7 @@
   },
   {
     "level": 13,
-    "element": [
-      "RCN"
-    ],
+    "element": ["RCN"],
     "title": {
       "en": "Lieutenant-Commander",
       "fr": "Capitaine de corvette"
@@ -260,10 +225,7 @@
   },
   {
     "level": 12,
-    "element": [
-      "CA",
-      "RCAF"
-    ],
+    "element": ["CA", "RCAF"],
     "title": {
       "en": "Captain",
       "fr": "Capitaine"
@@ -279,9 +241,7 @@
   },
   {
     "level": 12,
-    "element": [
-      "RCN"
-    ],
+    "element": ["RCN"],
     "title": {
       "en": "Lieutenant(N)",
       "fr": "Lieutenant de vaisseau"
@@ -297,10 +257,7 @@
   },
   {
     "level": 11,
-    "element": [
-      "CA",
-      "RCAF"
-    ],
+    "element": ["CA", "RCAF"],
     "title": {
       "en": "Lieutenant",
       "fr": "Lieutenant"
@@ -316,9 +273,7 @@
   },
   {
     "level": 11,
-    "element": [
-      "RCN"
-    ],
+    "element": ["RCN"],
     "title": {
       "en": "Sub-Lieutenant",
       "fr": "Enseigne de vaisseau de 1re classe"
@@ -334,10 +289,7 @@
   },
   {
     "level": 10,
-    "element": [
-      "CA",
-      "RCAF"
-    ],
+    "element": ["CA", "RCAF"],
     "title": {
       "en": "Second Lieutenant",
       "fr": "Sous-lieutenant"
@@ -353,9 +305,7 @@
   },
   {
     "level": 10,
-    "element": [
-      "RCN"
-    ],
+    "element": ["RCN"],
     "title": {
       "en": "Acting Sub-Lieutenant",
       "fr": "Enseigne de vaisseau de 2e classe"
@@ -371,10 +321,7 @@
   },
   {
     "level": 9,
-    "element": [
-      "CA",
-      "RCAF"
-    ],
+    "element": ["CA", "RCAF"],
     "title": {
       "en": "Officer Cadet",
       "fr": "Élève-officier"
@@ -390,9 +337,7 @@
   },
   {
     "level": 9,
-    "element": [
-      "RCN"
-    ],
+    "element": ["RCN"],
     "title": {
       "en": "Naval Cadet",
       "fr": "Aspirant de marine"
@@ -408,10 +353,7 @@
   },
   {
     "level": 8,
-    "element": [
-      "CA",
-      "RCAF"
-    ],
+    "element": ["CA", "RCAF"],
     "title": {
       "en": "Chief Warrant Officer",
       "fr": "Adjudant-chef"
@@ -427,9 +369,7 @@
   },
   {
     "level": 8,
-    "element": [
-      "RCN"
-    ],
+    "element": ["RCN"],
     "title": {
       "en": "Chief Petty Officer 1st class",
       "fr": "Premier maître de 1re classe"
@@ -445,10 +385,7 @@
   },
   {
     "level": 7,
-    "element": [
-      "CA",
-      "RCAF"
-    ],
+    "element": ["CA", "RCAF"],
     "title": {
       "en": "Master Warrant Officer",
       "fr": "Adjudant-maître"
@@ -464,9 +401,7 @@
   },
   {
     "level": 7,
-    "element": [
-      "RCN"
-    ],
+    "element": ["RCN"],
     "title": {
       "en": "Chief Petty Officer 2nd class",
       "fr": "Premier maître de 2e classe"
@@ -482,10 +417,7 @@
   },
   {
     "level": 6,
-    "element": [
-      "CA",
-      "RCAF"
-    ],
+    "element": ["CA", "RCAF"],
     "title": {
       "en": "Warrant Officer",
       "fr": "Adjudant"
@@ -501,9 +433,7 @@
   },
   {
     "level": 6,
-    "element": [
-      "RCN"
-    ],
+    "element": ["RCN"],
     "title": {
       "en": "Petty Officer 1st class",
       "fr": "Maître de 1re classe"
@@ -519,10 +449,7 @@
   },
   {
     "level": 5,
-    "element": [
-      "CA",
-      "RCAF"
-    ],
+    "element": ["CA", "RCAF"],
     "title": {
       "en": "Sergeant",
       "fr": "Sergent"
@@ -538,9 +465,7 @@
   },
   {
     "level": 5,
-    "element": [
-      "RCN"
-    ],
+    "element": ["RCN"],
     "title": {
       "en": "Petty Officer 2nd class",
       "fr": "Maître de 2e classe"
@@ -556,10 +481,7 @@
   },
   {
     "level": 4,
-    "element": [
-      "CA",
-      "RCAF"
-    ],
+    "element": ["CA", "RCAF"],
     "title": {
       "en": "Master Corporal",
       "fr": "Caporal-chef"
@@ -575,9 +497,7 @@
   },
   {
     "level": 4,
-    "element": [
-      "RCN"
-    ],
+    "element": ["RCN"],
     "title": {
       "en": "Master Sailor",
       "fr": "Matelot-chef"
@@ -593,10 +513,7 @@
   },
   {
     "level": 3,
-    "element": [
-      "CA",
-      "RCAF"
-    ],
+    "element": ["CA", "RCAF"],
     "title": {
       "en": "Corporal",
       "fr": "Caporal"
@@ -612,9 +529,7 @@
   },
   {
     "level": 3,
-    "element": [
-      "RCN"
-    ],
+    "element": ["RCN"],
     "title": {
       "en": "Sailor 1st Class",
       "fr": "Matelot de 1re classe"
@@ -630,9 +545,7 @@
   },
   {
     "level": 2,
-    "element": [
-      "CA"
-    ],
+    "element": ["CA"],
     "title": {
       "en": "Private (Trained)",
       "fr": "Soldat (formé)"
@@ -648,9 +561,7 @@
   },
   {
     "level": 2,
-    "element": [
-      "RCAF"
-    ],
+    "element": ["RCAF"],
     "title": {
       "en": "Aviator (Trained)",
       "fr": "Aviateur (formé)"
@@ -666,9 +577,7 @@
   },
   {
     "level": 2,
-    "element": [
-      "RCN"
-    ],
+    "element": ["RCN"],
     "title": {
       "en": "Sailor 2nd Class",
       "fr": "Matelot de 2e classe"
@@ -684,9 +593,7 @@
   },
   {
     "level": 1,
-    "element": [
-      "CA"
-    ],
+    "element": ["CA"],
     "title": {
       "en": "Private (Basic)",
       "fr": "Soldat (confirmé)"
@@ -702,9 +609,7 @@
   },
   {
     "level": 1,
-    "element": [
-      "RCAF"
-    ],
+    "element": ["RCAF"],
     "title": {
       "en": "Aviator (Basic)",
       "fr": "Aviateur (confirmé)"
@@ -720,9 +625,7 @@
   },
   {
     "level": 1,
-    "element": [
-      "RCN"
-    ],
+    "element": ["RCN"],
     "title": {
       "en": "Sailor 3rd Class",
       "fr": "Matelot de 3e classe"
