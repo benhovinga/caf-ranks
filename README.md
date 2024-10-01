@@ -20,18 +20,13 @@ This is a complete list of ranks within the Canadian Armed Forces (CAF). It incl
 - `element`: A list of CAF elements that use the rank (Options: CA, RCAF, RCN)
 
 ## License
-[caf-ranks](https://github.com/benhovinga/caf-ranks) by [Ben Hovinga](https://github.com/benhovinga) is licensed under [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
 
-Contains information licensed under the [Open Government Licence – Canada](https://open.canada.ca/en/open-government-licence-canada).
+This project is licensed under the [Open Government Licence - Canada 2.0](https://open.canada.ca/en/open-government-licence-canada)
 
-### Canadian Armed Forces Ranks JSON `caf-ranks.json`
-- __License__: [Open Government Licence - Canada 2.0](https://open.canada.ca/en/open-government-licence-canada)
-- __Author__: Compiled by [Ben Hovinga](https://github.com/benhovinga)
-- __Sources__:
-    - Tables found on [Military Ranks - Canada.ca](https://www.canada.ca/en/services/defence/caf/military-identity-system/rank-appointment-insignia.html) ([2023-08-30](https://web.archive.org/web/20230913233331/https://www.canada.ca/en/services/defence/caf/military-identity-system/rank-appointment-insignia.html))
-    - Tables found on [Grades militaires - Canada.ca](https://www.canada.ca/fr/services/defense/fac/systeme-identite-militaire/insignes-grade-fonction.html) ([2023-08-30](https://web.archive.org/web/20230930204703/https://www.canada.ca/fr/services/defense/fac/systeme-identite-militaire/insignes-grade-fonction.html))
+See [LICENSE.md](LICENSE.md)
 
-### Canadian Armed Forces Ranks SVG's  `/images`
-- __License__: [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
-- __Author__: Created by [Sodacan](https://commons.wikimedia.org/wiki/User:Sodacan)
-- __Source__: Tables found on [Canadian Armed Forces ranks and insignia - Wikipedia](https://en.wikipedia.org/wiki/Canadian_Armed_Forces_ranks_and_insignia)
+## Sources
+
+- Tables found on [Military Ranks - Canada.ca](https://www.canada.ca/en/services/defence/caf/military-identity-system/rank-appointment-insignia.html) ([2023-08-30](https://web.archive.org/web/20230913233331/https://www.canada.ca/en/services/defence/caf/military-identity-system/rank-appointment-insignia.html))
+- Tables found on [Grades militaires - Canada.ca](https://www.canada.ca/fr/services/defense/fac/systeme-identite-militaire/insignes-grade-fonction.html) ([2023-08-30](https://web.archive.org/web/20230930204703/https://www.canada.ca/fr/services/defense/fac/systeme-identite-militaire/insignes-grade-fonction.html))
+- CSV files found on [Rank Appointment Insignia - Open Government Portal](https://open.canada.ca/data/en/dataset/a503f0de-b081-4b8f-ae69-651f8c95d676)
