@@ -22,6 +22,7 @@
   "items": {
     "type": "object",
     "required": ["level", "element", "title", "abbreviation", "category"],
+    "additionalProperties": false,
     "properties": {
       "level": {
         "type": "integer",
@@ -39,6 +40,7 @@
       "category": {
         "type": "object",
         "required": ["en", "fr"],
+        "additionalProperties": false,
         "properties": {
           "en": {
             "enum": [
