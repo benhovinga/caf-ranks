@@ -4,7 +4,7 @@
   "description": "Complete list of the Canadian Armed Forces rank structure in JSON format (bilingual)",
   "main": "caf-ranks.json",
   "scripts": {
-    "test": "ajv validate -s caf-ranks.schema.json -d caf-ranks.json"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/benhovinga/caf-ranks#readme",
   "devDependencies": {
-    "ajv-cli": "^5.0.0"
+    "typescript": "^5.6.2"
   }
 }
