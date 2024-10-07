@@ -2,10 +2,14 @@
   "name": "@benhovinga/caf-ranks",
   "version": "0.5.0-beta",
   "description": "Complete list of the Canadian Armed Forces rank structure in JSON format (bilingual)",
-  "main": "caf-ranks.json",
+  "main": "dist/main.js",
+  "types": "dist/main.d.js",
   "scripts": {
     "build": "tsc"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/benhovinga/caf-ranks.git"
