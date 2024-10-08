@@ -2,20 +2,9 @@ export type BilingualString = {
     en: string;
     fr: string;
 };
-export declare enum CAFElement {
-    CA = "CA",
-    RCAF = "RCAF",
-    RCN = "RCN"
-}
-export declare enum RankCategory {
-    FlagOfficer = "FlagOfficer",
-    SeniorOfficer = "SeniorOfficer",
-    JuniorOfficer = "JuniorOfficer",
-    SubordinateOfficer = "SubordinateOfficer",
-    SeniorNCO = "SeniorNCO",
-    JuniorNCM = "JuniorNCM"
-}
-export interface RankMeta {
+export type CAFElement = "CA" | "RCAF" | "RCN";
+export type RankCategory = "FlagOfficer" | "SeniorOfficer" | "JuniorOfficer" | "SubordinateOfficer" | "SeniorNCO" | "JuniorNCM";
+export type RankMeta = {
     element: {
         CA: BilingualString;
         RCAF: BilingualString;
@@ -29,17 +18,23 @@ export interface RankMeta {
         SeniorNCO: BilingualString;
         JuniorNCM: BilingualString;
     };
-}
-export declare const rankMeta: RankMeta;
-export interface Rank {
+};
+export type Rank = {
     level: number;
     element: CAFElement[];
     title: BilingualString;
     abbreviation: BilingualString;
     category: RankCategory;
     getCategoryName: () => BilingualString;
-}
+};
+export declare const rankMeta: RankMeta;
 export declare const allRanks: Rank[];
-export declare function getRanksByElement(ranks: Rank[], element: CAFElement): Rank[];
-export declare function getRanksByCategory(ranks: Rank[], category: RankCategory): Rank[];
-export default allRanks;
+export declare function filterRanksByElement(ranks: Rank[], cafElement: CAFElement): Rank[];
+export declare function filterRanksByCategory(ranks: Rank[], rankCategory: RankCategory): Rank[];
+declare const _default: {
+    rankMeta: RankMeta;
+    allRanks: Rank[];
+    filterRanksByElement: typeof filterRanksByElement;
+    filterRanksByCategory: typeof filterRanksByCategory;
+};
+export default _default;

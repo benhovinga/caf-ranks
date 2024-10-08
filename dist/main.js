@@ -3,25 +3,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.allRanks = exports.rankMeta = exports.RankCategory = exports.CAFElement = void 0;
-exports.getRanksByElement = getRanksByElement;
-exports.getRanksByCategory = getRanksByCategory;
+exports.allRanks = exports.rankMeta = void 0;
+exports.filterRanksByElement = filterRanksByElement;
+exports.filterRanksByCategory = filterRanksByCategory;
 const caf_ranks_json_1 = __importDefault(require("./caf-ranks.json"));
-var CAFElement;
-(function (CAFElement) {
-    CAFElement["CA"] = "CA";
-    CAFElement["RCAF"] = "RCAF";
-    CAFElement["RCN"] = "RCN";
-})(CAFElement || (exports.CAFElement = CAFElement = {}));
-var RankCategory;
-(function (RankCategory) {
-    RankCategory["FlagOfficer"] = "FlagOfficer";
-    RankCategory["SeniorOfficer"] = "SeniorOfficer";
-    RankCategory["JuniorOfficer"] = "JuniorOfficer";
-    RankCategory["SubordinateOfficer"] = "SubordinateOfficer";
-    RankCategory["SeniorNCO"] = "SeniorNCO";
-    RankCategory["JuniorNCM"] = "JuniorNCM";
-})(RankCategory || (exports.RankCategory = RankCategory = {}));
 exports.rankMeta = {
     element: caf_ranks_json_1.default.element,
     category: caf_ranks_json_1.default.category,
@@ -29,12 +14,17 @@ exports.rankMeta = {
 exports.allRanks = caf_ranks_json_1.default.allRanks.map((rank) => (Object.assign(Object.assign({}, rank), { element: rank.element, category: rank.category, getCategoryName: function () {
         return exports.rankMeta.category[this.category];
     } })));
-function getRanksByElement(ranks, element) {
+function filterRanksByElement(ranks, cafElement) {
     return ranks.filter((rank) => {
-        return rank.element.filter((elem) => elem === element).length > 0;
+        return rank.element.filter((element) => element === cafElement).length > 0;
     });
 }
-function getRanksByCategory(ranks, category) {
-    return ranks.filter((rank) => rank.category === category);
+function filterRanksByCategory(ranks, rankCategory) {
+    return ranks.filter((rank) => rank.category === rankCategory);
 }
-exports.default = exports.allRanks;
+exports.default = {
+    rankMeta: exports.rankMeta,
+    allRanks: exports.allRanks,
+    filterRanksByElement,
+    filterRanksByCategory,
+};
