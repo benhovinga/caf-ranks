@@ -5,6 +5,7 @@
   "main": "dist/main.js",
   "types": "dist/main.d.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit",
     "build": "tsc"
   },
   "files": [
