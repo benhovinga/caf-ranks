@@ -2,22 +2,17 @@ import ranksJSON from "./caf-ranks.json";
 
 export type BilingualString = { en: string; fr: string };
 
-export enum CAFElement {
-  CA = "CA",
-  RCAF = "RCAF",
-  RCN = "RCN",
-}
+export type CAFElement = "CA" | "RCAF" | "RCN";
 
-export enum RankCategory {
-  FlagOfficer = "FlagOfficer",
-  SeniorOfficer = "SeniorOfficer",
-  JuniorOfficer = "JuniorOfficer",
-  SubordinateOfficer = "SubordinateOfficer",
-  SeniorNCO = "SeniorNCO",
-  JuniorNCM = "JuniorNCM",
-}
+export type RankCategory =
+  | "FlagOfficer"
+  | "SeniorOfficer"
+  | "JuniorOfficer"
+  | "SubordinateOfficer"
+  | "SeniorNCO"
+  | "JuniorNCM";
 
-export interface RankMeta {
+export type RankMeta = {
   element: {
     CA: BilingualString;
     RCAF: BilingualString;
@@ -31,21 +26,21 @@ export interface RankMeta {
     SeniorNCO: BilingualString;
     JuniorNCM: BilingualString;
   };
-}
-
-export const rankMeta: RankMeta = {
-  element: ranksJSON.element,
-  category: ranksJSON.category,
 };
 
-export interface Rank {
+export type Rank = {
   level: number;
   element: CAFElement[];
   title: BilingualString;
   abbreviation: BilingualString;
   category: RankCategory;
   getCategoryName: () => BilingualString;
-}
+};
+
+export const rankMeta: RankMeta = {
+  element: ranksJSON.element,
+  category: ranksJSON.category,
+};
 
 export const allRanks: Rank[] = ranksJSON.allRanks.map((rank) => ({
   ...rank,
@@ -56,17 +51,25 @@ export const allRanks: Rank[] = ranksJSON.allRanks.map((rank) => ({
   },
 }));
 
-export function getRanksByElement(ranks: Rank[], element: CAFElement): Rank[] {
+export function filterRanksByElement(
+  ranks: Rank[],
+  cafElement: CAFElement
+): Rank[] {
   return ranks.filter((rank) => {
-    return rank.element.filter((elem) => elem === element).length > 0;
+    return rank.element.filter((element) => element === cafElement).length > 0;
   });
 }
 
-export function getRanksByCategory(
+export function filterRanksByCategory(
   ranks: Rank[],
-  category: RankCategory
+  rankCategory: RankCategory
 ): Rank[] {
-  return ranks.filter((rank) => rank.category === category);
+  return ranks.filter((rank) => rank.category === rankCategory);
 }
 
-export default allRanks;
+export default {
+  rankMeta,
+  allRanks,
+  filterRanksByElement,
+  filterRanksByCategory,
+};
