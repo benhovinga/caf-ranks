@@ -1,7 +1,7 @@
 {
-  "name": "@benhovinga/caf-ranks",
+  "name": "caf-ranks",
   "version": "0.5.0",
-  "description": "Complete list of the Canadian Armed Forces rank structure in JSON format (bilingual)",
+  "description": "Library of the Canadian Armed Forces rank structure (bilingual)",
   "main": "dist/main.js",
   "types": "dist/main.d.js",
   "scripts": {
