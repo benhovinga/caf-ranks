@@ -4,34 +4,125 @@
 
 Ranks in the Canadian Armed Forces mark a person's position in its hierarchical structure. As people gain more responsibility and authority, they earn promotions in rank.
 
-## Purpose
+This library enables the easy reusability of the Canadian Armed Forces Ranks within your own project.
 
-I created this project because the dataset that is available on the [Open Government Portal](https://open.canada.ca/data/en/dataset/a503f0de-b081-4b8f-ae69-651f8c95d676) are insufficient for advanced programatic consumption. The dataset is insufficient for the following reasons:
+## Features
 
-1. CSV files cannot be easily consumed by various programming environments compared to JSON;
-2. the datasets have string formatting issues (extra/missing spaces);
-3. the dataset has been split into seperate files for English and French versions; and
-4. the dataset dosn't include the RCN gender neutral nomenclature change.
+- Support for both official languages (English and French)
+- Static [JSON document](src/caf-ranks.json)
+- Typing support
+- Built-in filtering methods:
+  - Filter by CAF Element (Army, Air, Navy)
+  - Filter by Rank Category (NCM, NCO, Junior Officer ...)
 
-The caf-ranks project solves these issues and provides the dataset in a single JSON file.
+## Install
 
-## [caf-ranks.json](caf-ranks.json)
+This library is available using the Node Package Manager.
 
-This is a complete list of ranks within the Canadian Armed Forces (CAF). It includes both English and French versions of each rank. A minified version of this dataset exists as [caf-ranks.min.json](caf-ranks.min.json) after running `python3 minify.py`.
+```bash
+npm install caf-ranks
+```
 
-### Rank Object Keys
+## Import Into Your Project
 
-- `level`: The rank level. Multiple ranks will share a level, only seperated by element.
-- `title`: The full rank title
-  - `en`: English text
-  - `fr`: French text
-- `abbreviation`: The rank abbreviation
-  - `en`: English text
-  - `fr`: French text
-- `category`: The category of the rank
-  - `en`: English text
-  - `fr`: French text
-- `element`: A list of CAF elements that use the rank (Options: CA, RCAF, RCN)
+Depending on the environment you are using, importing the library will look a little different.
+
+```javascript
+// CommonJS
+const { allRanks } = require("caf-ranks");
+
+// ModernJS
+import { allRanks } from "caf-ranks";
+```
+
+## Examples
+
+### Basic Usage
+
+```javascript
+import { allRanks } from "caf-ranks";
+
+// Log all English ranks to the console
+allRanks.forEach((rank) => {
+  console.log(rank.title.en);
+});
+/*
+  General
+  Admiral
+  Lieutenant-General
+  Vice-Admiral
+  Major-General
+  (...)
+*/
+
+// Log all French rank abberviations to the console
+allRanks.forEach((rank) => {
+  console.log(rank.abbreviation.fr);
+});
+/*
+  gén
+  am
+  lgén
+  vam
+  mgén
+  (...)
+*/
+```
+
+### Filtering Ranks
+
+```javascript
+import {
+  allRanks,
+  filterRanksByElement,
+  filterRanksByCategory,
+} from "caf-ranks";
+
+// Log all English Navy ranks to the console
+const navyRanks = filterRanksByElement(allRanks, "RCN");
+navyRanks.forEach((rank) => {
+  console.log(rank.title.en);
+});
+/*
+  Admiral
+  Vice-Admiral
+  Rear-Admiral
+  Commodore
+  Captain(N)
+  (...)
+*/
+
+// Log all French Air Force NCM ranks to the console
+const airForceRanks = filterRanksByElement(allRanks, "RCAF");
+const airForceNCMRanks = filterRanksByCategory(airForceRanks, "JuniorNCM");
+airForceNCMRanks.forEach((rank) => {
+  console.log(rank.title.fr);
+});
+/*
+  Caporal-chef
+  Caporal
+  Aviateur (formé)
+  Aviateur (confirmé)
+*/
+```
+
+### Using Rank Meta
+
+```javascript
+import { rankMeta } from "caf-ranks";
+
+// Log the English version of the Army element to the console
+console.log(rankMeta.element.CA.en);
+/*
+  Canadian Army
+*/
+
+// Log the French version of the Flag Officer category to the console
+console.log(rankMeta.category.FlagOfficer.fr);
+/*
+  Officiers généraux
+*/
+```
 
 ## License
 
