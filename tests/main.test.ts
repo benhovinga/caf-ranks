@@ -7,7 +7,7 @@ import {
   filterRanksByCategory,
   filterRanksByElement,
   RankCategory,
-  CAFElement,
+  Command,
 } from "../src/main";
 
 describe("test allRanks", () => {
@@ -25,9 +25,9 @@ describe.each(allRanks)(
       expect(rank.level).toBeLessThanOrEqual(19);
     });
 
-    test("element property contains a valid CAF element", () => {
-      expect(rank).toHaveProperty("element");
-      expect(rank.element).toContainAnyOf(["CA", "RCAF", "RCN"]);
+    test("commands property contains a valid command value", () => {
+      expect(rank).toHaveProperty("commands");
+      expect(rank.commands).toContainAnyOf(["CA", "RCAF", "RCN"]);
     });
 
     test("title property is bilingual string", () => {
@@ -94,7 +94,7 @@ describe("test filterRanksByElement()", () => {
     ["RCAF", 19],
     ["RCN", 19],
   ])("%s element has %i items", (element, expected) => {
-    expect(filterRanksByElement(allRanks, element as CAFElement)).toHaveLength(
+    expect(filterRanksByElement(allRanks, element as Command)).toHaveLength(
       expected
     );
   });
