@@ -59,9 +59,9 @@ export function filterRanksByElement(ranks: Rank[], command: Command): Rank[] {
 
 export function filterRanksByCategory(
   ranks: Rank[],
-  rankCategory: RankCategory
+  category: RankCategory
 ): Rank[] {
-  return ranks.filter((rank) => rank.category === rankCategory);
+  return ranks.filter((rank) => rank.category === category);
 }
 
 export default {
