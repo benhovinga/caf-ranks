@@ -51,7 +51,7 @@ export const allRanks: Rank[] = ranksJSON.allRanks.map((rank) => ({
   },
 }));
 
-export function filterRanksByElement(ranks: Rank[], command: Command): Rank[] {
+export function filterRanksByCommand(ranks: Rank[], command: Command): Rank[] {
   return ranks.filter((rank) => {
     return rank.commands.filter((_command) => _command === command).length > 0;
   });
@@ -67,6 +67,6 @@ export function filterRanksByCategory(
 export default {
   rankMeta,
   allRanks,
-  filterRanksByElement,
+  filterRanksByCommand,
   filterRanksByCategory,
 };

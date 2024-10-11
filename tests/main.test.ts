@@ -5,7 +5,7 @@ import "./toContainAnyOf";
 import {
   allRanks,
   filterRanksByCategory,
-  filterRanksByElement,
+  filterRanksByCommand,
   RankCategory,
   Command,
 } from "../src/main";
@@ -94,7 +94,7 @@ describe("test filterRanksByElement()", () => {
     ["RCAF", 19],
     ["RCN", 19],
   ])("%s element has %i items", (element, expected) => {
-    expect(filterRanksByElement(allRanks, element as Command)).toHaveLength(
+    expect(filterRanksByCommand(allRanks, element as Command)).toHaveLength(
       expected
     );
   });
