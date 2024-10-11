@@ -74,12 +74,12 @@ allRanks.forEach((rank) => {
 ```javascript
 import {
   allRanks,
-  filterRanksByElement,
+  filterRanksByCommand,
   filterRanksByCategory,
 } from "caf-ranks";
 
 // Log all English Navy ranks to the console
-const navyRanks = filterRanksByElement(allRanks, "RCN");
+const navyRanks = filterRanksByCommand(allRanks, "RCN");
 navyRanks.forEach((rank) => {
   console.log(rank.title.en);
 });
@@ -93,7 +93,7 @@ navyRanks.forEach((rank) => {
 */
 
 // Log all French Air Force NCM ranks to the console
-const airForceRanks = filterRanksByElement(allRanks, "RCAF");
+const airForceRanks = filterRanksByCommand(allRanks, "RCAF");
 const airForceNCMRanks = filterRanksByCategory(airForceRanks, "JuniorNCM");
 airForceNCMRanks.forEach((rank) => {
   console.log(rank.title.fr);
@@ -112,7 +112,7 @@ airForceNCMRanks.forEach((rank) => {
 import { rankMeta } from "caf-ranks";
 
 // Log the English version of the Army element to the console
-console.log(rankMeta.element.CA.en);
+console.log(rankMeta.command.CA.en);
 /*
   Canadian Army
 */
