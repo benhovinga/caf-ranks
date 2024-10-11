@@ -2,7 +2,7 @@ import ranksJSON from "./caf-ranks.json";
 
 export type BilingualString = { en: string; fr: string };
 
-export type CAFElement = "CA" | "RCAF" | "RCN";
+export type Command = "CA" | "RCAF" | "RCN";
 
 export type RankCategory =
   | "FlagOfficer"
@@ -13,7 +13,7 @@ export type RankCategory =
   | "JuniorNCM";
 
 export type RankMeta = {
-  element: {
+  command: {
     CA: BilingualString;
     RCAF: BilingualString;
     RCN: BilingualString;
@@ -30,7 +30,7 @@ export type RankMeta = {
 
 export type Rank = {
   level: number;
-  element: CAFElement[];
+  commands: Command[];
   title: BilingualString;
   abbreviation: BilingualString;
   category: RankCategory;
@@ -38,25 +38,22 @@ export type Rank = {
 };
 
 export const rankMeta: RankMeta = {
-  element: ranksJSON.element,
+  command: ranksJSON.command,
   category: ranksJSON.category,
 };
 
 export const allRanks: Rank[] = ranksJSON.allRanks.map((rank) => ({
   ...rank,
-  element: rank.element as CAFElement[],
+  commands: rank.commands as Command[],
   category: rank.category as RankCategory,
   getCategoryName: function () {
     return rankMeta.category[this.category];
   },
 }));
 
-export function filterRanksByElement(
-  ranks: Rank[],
-  cafElement: CAFElement
-): Rank[] {
+export function filterRanksByElement(ranks: Rank[], command: Command): Rank[] {
   return ranks.filter((rank) => {
-    return rank.element.filter((element) => element === cafElement).length > 0;
+    return rank.commands.filter((_command) => _command === command).length > 0;
   });
 }
 
