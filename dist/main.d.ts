@@ -2,10 +2,10 @@ export type BilingualString = {
     en: string;
     fr: string;
 };
-export type CAFElement = "CA" | "RCAF" | "RCN";
+export type Command = "CA" | "RCAF" | "RCN";
 export type RankCategory = "FlagOfficer" | "SeniorOfficer" | "JuniorOfficer" | "SubordinateOfficer" | "SeniorNCO" | "JuniorNCM";
 export type RankMeta = {
-    element: {
+    command: {
         CA: BilingualString;
         RCAF: BilingualString;
         RCN: BilingualString;
@@ -21,7 +21,7 @@ export type RankMeta = {
 };
 export type Rank = {
     level: number;
-    element: CAFElement[];
+    commands: Command[];
     title: BilingualString;
     abbreviation: BilingualString;
     category: RankCategory;
@@ -29,7 +29,7 @@ export type Rank = {
 };
 export declare const rankMeta: RankMeta;
 export declare const allRanks: Rank[];
-export declare function filterRanksByElement(ranks: Rank[], cafElement: CAFElement): Rank[];
+export declare function filterRanksByElement(ranks: Rank[], command: Command): Rank[];
 export declare function filterRanksByCategory(ranks: Rank[], rankCategory: RankCategory): Rank[];
 declare const _default: {
     rankMeta: RankMeta;

@@ -8,15 +8,15 @@ exports.filterRanksByElement = filterRanksByElement;
 exports.filterRanksByCategory = filterRanksByCategory;
 const caf_ranks_json_1 = __importDefault(require("./caf-ranks.json"));
 exports.rankMeta = {
-    element: caf_ranks_json_1.default.element,
+    command: caf_ranks_json_1.default.command,
     category: caf_ranks_json_1.default.category,
 };
-exports.allRanks = caf_ranks_json_1.default.allRanks.map((rank) => (Object.assign(Object.assign({}, rank), { element: rank.element, category: rank.category, getCategoryName: function () {
+exports.allRanks = caf_ranks_json_1.default.allRanks.map((rank) => (Object.assign(Object.assign({}, rank), { commands: rank.commands, category: rank.category, getCategoryName: function () {
         return exports.rankMeta.category[this.category];
     } })));
-function filterRanksByElement(ranks, cafElement) {
+function filterRanksByElement(ranks, command) {
     return ranks.filter((rank) => {
-        return rank.element.filter((element) => element === cafElement).length > 0;
+        return rank.commands.filter((_command) => _command === command).length > 0;
     });
 }
 function filterRanksByCategory(ranks, rankCategory) {
