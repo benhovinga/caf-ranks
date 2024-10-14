@@ -6,7 +6,8 @@
   "types": "dist/main.d.js",
   "scripts": {
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc",
+    "docs": "docsify serve docs"
   },
   "files": [
     "dist"
@@ -29,6 +30,8 @@
   "homepage": "https://github.com/benhovinga/caf-ranks#readme",
   "devDependencies": {
     "@types/jest": "^29.5.13",
+    "docsify": "^4.11.4",
+    "docsify-cli": "^4.4.2",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
