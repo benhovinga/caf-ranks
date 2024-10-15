@@ -2,10 +2,10 @@ export type BilingualString = {
     en: string;
     fr: string;
 };
-export type Command = "CA" | "RCAF" | "RCN";
+export type Uniform = "CA" | "RCAF" | "RCN";
 export type RankCategory = "FlagOfficer" | "SeniorOfficer" | "JuniorOfficer" | "SubordinateOfficer" | "SeniorNCO" | "JuniorNCM";
 export type RankMeta = {
-    command: {
+    uniform: {
         CA: BilingualString;
         RCAF: BilingualString;
         RCN: BilingualString;
@@ -21,7 +21,7 @@ export type RankMeta = {
 };
 export type Rank = {
     level: number;
-    commands: Command[];
+    uniforms: Uniform[];
     title: BilingualString;
     abbreviation: BilingualString;
     category: RankCategory;
@@ -29,12 +29,12 @@ export type Rank = {
 };
 export declare const rankMeta: RankMeta;
 export declare const allRanks: Rank[];
-export declare function filterRanksByCommand(ranks: Rank[], command: Command): Rank[];
+export declare function filterRanksByUniform(ranks: Rank[], uniform: Uniform): Rank[];
 export declare function filterRanksByCategory(ranks: Rank[], category: RankCategory): Rank[];
 declare const _default: {
     rankMeta: RankMeta;
     allRanks: Rank[];
-    filterRanksByCommand: typeof filterRanksByCommand;
+    filterRanksByUniform: typeof filterRanksByUniform;
     filterRanksByCategory: typeof filterRanksByCategory;
 };
 export default _default;

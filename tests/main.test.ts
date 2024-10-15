@@ -5,15 +5,15 @@ import "./toContainAnyOf";
 import {
   allRanks,
   filterRanksByCategory,
-  filterRanksByCommand,
+  filterRanksByUniform,
   RankCategory,
-  Command,
+  Uniform,
   rankMeta,
 } from "../src/main";
 
 describe("test rankMeta object", () => {
-  test("command property is expected object shape", () => {
-    expect(rankMeta.command).toEqual(
+  test("uniform property is expected object shape", () => {
+    expect(rankMeta.uniform).toEqual(
       expect.objectContaining({
         CA: expect.objectContaining({
           en: expect.any(String),
@@ -79,15 +79,15 @@ describe("test allRanks array", () => {
       });
     });
 
-    describe("command property", () => {
+    describe("uniform property", () => {
       test("has property", () => {
-        expect(rank).toHaveProperty("commands");
+        expect(rank).toHaveProperty("uniforms");
       });
-      test("has a valid command", () => {
-        expect(rank.commands).toContainAnyOf(["CA", "RCAF", "RCN"]);
+      test("has a valid uniform", () => {
+        expect(rank.uniforms).toContainAnyOf(["CA", "RCAF", "RCN"]);
       });
-      test("has no more than 2 commands", () => {
-        expect(rank.commands.length).toBeLessThanOrEqual(2);
+      test("has no more than 2 uniforms", () => {
+        expect(rank.uniforms.length).toBeLessThanOrEqual(2);
       });
     });
 
@@ -166,13 +166,13 @@ describe("test filterRanksByCategory function", () => {
   });
 });
 
-describe("test filterRanksByElement function", () => {
+describe("test filterRanksByUniform function", () => {
   test.each([
     ["CA", 19],
     ["RCAF", 19],
     ["RCN", 19],
-  ])("%s element has %i items", (element, expected) => {
-    expect(filterRanksByCommand(allRanks, element as Command)).toHaveLength(
+  ])("%s uniform has %i items", (uniform, expected) => {
+    expect(filterRanksByUniform(allRanks, uniform as Uniform)).toHaveLength(
       expected
     );
   });

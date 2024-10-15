@@ -2,7 +2,7 @@ import ranksJSON from "./caf-ranks.json";
 
 export type BilingualString = { en: string; fr: string };
 
-export type Command = "CA" | "RCAF" | "RCN";
+export type Uniform = "CA" | "RCAF" | "RCN";
 
 export type RankCategory =
   | "FlagOfficer"
@@ -13,7 +13,7 @@ export type RankCategory =
   | "JuniorNCM";
 
 export type RankMeta = {
-  command: {
+  uniform: {
     CA: BilingualString;
     RCAF: BilingualString;
     RCN: BilingualString;
@@ -30,7 +30,7 @@ export type RankMeta = {
 
 export type Rank = {
   level: number;
-  commands: Command[];
+  uniforms: Uniform[];
   title: BilingualString;
   abbreviation: BilingualString;
   category: RankCategory;
@@ -38,22 +38,22 @@ export type Rank = {
 };
 
 export const rankMeta: RankMeta = {
-  command: ranksJSON.command,
+  uniform: ranksJSON.uniform,
   category: ranksJSON.category,
 };
 
 export const allRanks: Rank[] = ranksJSON.allRanks.map((rank) => ({
   ...rank,
-  commands: rank.commands as Command[],
+  uniforms: rank.uniforms as Uniform[],
   category: rank.category as RankCategory,
   getCategoryName: function () {
     return rankMeta.category[this.category];
   },
 }));
 
-export function filterRanksByCommand(ranks: Rank[], command: Command): Rank[] {
+export function filterRanksByUniform(ranks: Rank[], uniform: Uniform): Rank[] {
   return ranks.filter((rank) => {
-    return rank.commands.filter((_command) => _command === command).length > 0;
+    return rank.uniforms.filter((_uniform) => _uniform === uniform).length > 0;
   });
 }
 
@@ -67,6 +67,6 @@ export function filterRanksByCategory(
 export default {
   rankMeta,
   allRanks,
-  filterRanksByCommand,
+  filterRanksByUniform,
   filterRanksByCategory,
 };

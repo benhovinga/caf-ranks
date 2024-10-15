@@ -1,19 +1,19 @@
 import ranksJSON from "./caf-ranks.json";
 export const rankMeta = {
-    command: ranksJSON.command,
+    uniform: ranksJSON.uniform,
     category: ranksJSON.category,
 };
 export const allRanks = ranksJSON.allRanks.map((rank) => ({
     ...rank,
-    commands: rank.commands,
+    uniforms: rank.uniforms,
     category: rank.category,
     getCategoryName: function () {
         return rankMeta.category[this.category];
     },
 }));
-export function filterRanksByCommand(ranks, command) {
+export function filterRanksByUniform(ranks, uniform) {
     return ranks.filter((rank) => {
-        return rank.commands.filter((_command) => _command === command).length > 0;
+        return rank.uniforms.filter((_uniform) => _uniform === uniform).length > 0;
     });
 }
 export function filterRanksByCategory(ranks, category) {
@@ -22,6 +22,6 @@ export function filterRanksByCategory(ranks, category) {
 export default {
     rankMeta,
     allRanks,
-    filterRanksByCommand,
+    filterRanksByUniform,
     filterRanksByCategory,
 };
