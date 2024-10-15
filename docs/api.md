@@ -4,7 +4,7 @@ TODO
 
 ## array `allRanks: Rank[]` :id=array-all-ranks
 
-`allRanks` is an array of [`Rank`](#type-rank). You will usually iterate over this array using the `.forEach()` method to list all of the ranks.
+`allRanks` is an array of [`Rank`](#type-rank) items. You will usually iterate over this array using the `.forEach()` method to list all of the ranks.
 
 ```javascript
 import { allRanks } from "caf-ranks";
@@ -18,9 +18,25 @@ allRanks.forEach((rank) => {
 
 > See [type Rank](#type-rank) for more on it's usage.
 
+!> `allRanks` includes all ranks for all Commands. To only load the ranks for one Command (such as RCN) use [`filterRanksByCommand()`](#function-filter-ranks-by-command) function.
+
 ## object `rankMeta: RankMeta` :id=object-rank-meta
 
-`rankMeta` is an object that strongly follows the type `RankMeta`. This object is used for translations of commands and categories.
+`rankMeta` is an object that strongly follows the type [`RankMeta`](#type-rank-meta). This object is used for translations of commands and categories.
+
+```javascript
+import { rankMeta } from "caf-ranks";
+
+// Output the CA command in English and French
+console.log(`${rankMeta.command.CA.en} / ${rankMeta.command.CA.fr}`);
+
+// Output the JuniorNCM category in English and French
+console.log(
+  `${rankMeta.category.JuniorNCM.en} / ${rankMeta.category.JuniorNCM.fr}`
+);
+```
+
+> See [type RankMeta](#type-rank-meta) for more on it's usage
 
 ## function `filterRanksByCategory(): Ranks[]` :id=function-filter-ranks-by-category
 
