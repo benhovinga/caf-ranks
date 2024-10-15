@@ -23,18 +23,6 @@ This library is available using the Node Package Manager.
 npm install caf-ranks
 ```
 
-## Import Into Your Project
-
-Depending on the environment you are using, importing the library will look a little different.
-
-```javascript
-// CommonJS
-const { allRanks } = require("caf-ranks");
-
-// ModernJS
-import { allRanks } from "caf-ranks";
-```
-
 ## Examples
 
 ### Basic Usage

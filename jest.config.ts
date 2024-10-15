@@ -5,7 +5,6 @@ const config: JestConfigWithTsJest = {
   transform: {
     "^.+.tsx?$": ["ts-jest", {}],
   },
-  verbose: true,
   roots: ["tests", "src"],
 };
 

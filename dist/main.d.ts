@@ -29,12 +29,12 @@ export type Rank = {
 };
 export declare const rankMeta: RankMeta;
 export declare const allRanks: Rank[];
-export declare function filterRanksByElement(ranks: Rank[], command: Command): Rank[];
-export declare function filterRanksByCategory(ranks: Rank[], rankCategory: RankCategory): Rank[];
+export declare function filterRanksByCommand(ranks: Rank[], command: Command): Rank[];
+export declare function filterRanksByCategory(ranks: Rank[], category: RankCategory): Rank[];
 declare const _default: {
     rankMeta: RankMeta;
     allRanks: Rank[];
-    filterRanksByElement: typeof filterRanksByElement;
+    filterRanksByCommand: typeof filterRanksByCommand;
     filterRanksByCategory: typeof filterRanksByCategory;
 };
 export default _default;
