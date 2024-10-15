@@ -1,6 +1,6 @@
 # Canadian Armed Forces (CAF) Ranks
 
-**Current Version**: v0.6.0
+**Current Version**: v0.7.0
 
 Ranks in the Canadian Armed Forces mark a person's position in its hierarchical structure. As people gain more responsibility and authority, they earn promotions in rank.
 
@@ -12,7 +12,7 @@ This library enables the easy reusability of the Canadian Armed Forces Ranks wit
 - Static [JSON document](src/caf-ranks.json)
 - Typing support
 - Built-in filtering methods:
-  - Filter by CAF Element (Army, Air, Navy)
+  - Filter by uniform (Army, Air, Navy)
   - Filter by Rank Category (NCM, NCO, Junior Officer ...)
 
 ## Install
@@ -62,12 +62,12 @@ allRanks.forEach((rank) => {
 ```javascript
 import {
   allRanks,
-  filterRanksByCommand,
+  filterRanksByUniform,
   filterRanksByCategory,
 } from "caf-ranks";
 
 // Log all English Navy ranks to the console
-const navyRanks = filterRanksByCommand(allRanks, "RCN");
+const navyRanks = filterRanksByUniform(allRanks, "RCN");
 navyRanks.forEach((rank) => {
   console.log(rank.title.en);
 });
@@ -81,7 +81,7 @@ navyRanks.forEach((rank) => {
 */
 
 // Log all French Air Force NCM ranks to the console
-const airForceRanks = filterRanksByCommand(allRanks, "RCAF");
+const airForceRanks = filterRanksByUniform(allRanks, "RCAF");
 const airForceNCMRanks = filterRanksByCategory(airForceRanks, "JuniorNCM");
 airForceNCMRanks.forEach((rank) => {
   console.log(rank.title.fr);
@@ -99,8 +99,8 @@ airForceNCMRanks.forEach((rank) => {
 ```javascript
 import { rankMeta } from "caf-ranks";
 
-// Log the English version of the Army element to the console
-console.log(rankMeta.command.CA.en);
+// Log the English version of the Army uniform to the console
+console.log(rankMeta.uniform.CA.en);
 /*
   Canadian Army
 */
