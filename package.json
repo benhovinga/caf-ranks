@@ -3,9 +3,9 @@
   "version": "0.7.0",
   "description": "Library of the Canadian Armed Forces rank structure (bilingual)",
   "main": "dist/main.js",
+  "type": "module",
   "scripts": {
-    "test": "jest",
-    "build": "rollup -c"
+    "test": "jest"
   },
   "files": [
     "dist"
@@ -27,13 +27,16 @@
   },
   "homepage": "https://github.com/benhovinga/caf-ranks#readme",
   "devDependencies": {
-    "jest": "^29.7.0",
-    "jsdom": "^25.0.1",
-    "rollup": "^4.24.0"
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
+    "@babel/preset-typescript": "^7.25.7",
+    "@types/jest": "^29.5.13",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
   },
   "jest": {
-    "setupFiles": [
-      "./jest.setup.js"
-    ]
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
   }
 }
