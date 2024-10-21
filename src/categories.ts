@@ -1,10 +1,10 @@
-import { Category } from "./types";
+import Category from "./models/Category";
 
 const categories: Category[] = [
   {
     minLevel: 1,
     maxLevel: 4,
-    title: {
+    label: {
       en: "Junior Non-Commissioned Members",
       fr: "Militaires du rang subalternes",
     },
@@ -12,7 +12,7 @@ const categories: Category[] = [
   {
     minLevel: 5,
     maxLevel: 8,
-    title: {
+    label: {
       en: "Warrant Officers, Petty Officers and Senior Non-Commissioned Officers",
       fr: "Adjudants, officiers mariniers et sous-officiers supérieurs",
     },
@@ -20,7 +20,7 @@ const categories: Category[] = [
   {
     minLevel: 9,
     maxLevel: 9,
-    title: {
+    label: {
       en: "Subordinate Officer",
       fr: "Officier subordonné",
     },
@@ -28,7 +28,7 @@ const categories: Category[] = [
   {
     minLevel: 10,
     maxLevel: 12,
-    title: {
+    label: {
       en: "Junior Officers",
       fr: "Officiers subalternes",
     },
@@ -36,7 +36,7 @@ const categories: Category[] = [
   {
     minLevel: 13,
     maxLevel: 15,
-    title: {
+    label: {
       en: "Senior Officers",
       fr: "Officiers supérieurs",
     },
@@ -44,11 +44,14 @@ const categories: Category[] = [
   {
     minLevel: 16,
     maxLevel: 19,
-    title: {
+    label: {
       en: "General/Flag Officers",
       fr: "Officiers généraux",
     },
   },
-];
+].map(
+  (category) =>
+    new Category(category.label, category.minLevel, category.maxLevel)
+);
 
 export default categories;

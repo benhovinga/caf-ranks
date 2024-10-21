@@ -2,8 +2,7 @@
   "name": "caf-ranks",
   "version": "0.7.0",
   "description": "Library of the Canadian Armed Forces rank structure (bilingual)",
-  "main": "dist/main.js",
-  "type": "module",
+  "main": "dist/",
   "scripts": {
     "test": "jest"
   },
@@ -32,7 +31,8 @@
     "@babel/preset-typescript": "^7.25.7",
     "@types/jest": "^29.5.13",
     "babel-jest": "^29.7.0",
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "typescript": "^5.6.3"
   },
   "jest": {
     "transform": {
