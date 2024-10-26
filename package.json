@@ -1,9 +1,9 @@
 {
   "name": "caf-ranks",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Library of the Canadian Armed Forces rank structure (bilingual)",
-  "main": "dist/main.js",
-  "types": "dist/main.d.js",
+  "main": "lib/main.js",
+  "types": "lib/main.d.js",
   "scripts": {
     "test": "jest",
     "build": "tsc",
@@ -11,7 +11,7 @@
     "clean:lib": "rm -rf ./lib"
   },
   "files": [
-    "dist"
+    "lib"
   ],
   "repository": {
     "type": "git",
