@@ -1,6 +1,6 @@
 import ranksJSON from "./caf-ranks.json";
 
-export type BilingualString = { en: string; fr: string };
+export type I18nField = { en: string; fr: string };
 
 export type Uniform = "CA" | "RCAF" | "RCN";
 
@@ -14,27 +14,27 @@ export type RankCategory =
 
 export type RankMeta = {
   uniform: {
-    CA: BilingualString;
-    RCAF: BilingualString;
-    RCN: BilingualString;
+    CA: I18nField;
+    RCAF: I18nField;
+    RCN: I18nField;
   };
   category: {
-    FlagOfficer: BilingualString;
-    SeniorOfficer: BilingualString;
-    JuniorOfficer: BilingualString;
-    SubordinateOfficer: BilingualString;
-    SeniorNCO: BilingualString;
-    JuniorNCM: BilingualString;
+    FlagOfficer: I18nField;
+    SeniorOfficer: I18nField;
+    JuniorOfficer: I18nField;
+    SubordinateOfficer: I18nField;
+    SeniorNCO: I18nField;
+    JuniorNCM: I18nField;
   };
 };
 
 export type Rank = {
   level: number;
   uniforms: Uniform[];
-  title: BilingualString;
-  abbreviation: BilingualString;
+  title: I18nField;
+  abbreviation: I18nField;
   category: RankCategory;
-  getCategoryName: () => BilingualString;
+  getCategoryName: () => I18nField;
 };
 
 export const rankMeta: RankMeta = {
@@ -46,16 +46,10 @@ export const allRanks: Rank[] = ranksJSON.allRanks.map((rank) => ({
   ...rank,
   uniforms: rank.uniforms as Uniform[],
   category: rank.category as RankCategory,
-  getCategoryName: function () {
+  getCategoryName: function (): I18nField {
     return rankMeta.category[this.category];
   },
 }));
-
-export function filterRanksByUniform(ranks: Rank[], uniform: Uniform): Rank[] {
-  return ranks.filter((rank) => {
-    return rank.uniforms.filter((_uniform) => _uniform === uniform).length > 0;
-  });
-}
 
 export function filterRanksByCategory(
   ranks: Rank[],
@@ -64,9 +58,15 @@ export function filterRanksByCategory(
   return ranks.filter((rank) => rank.category === category);
 }
 
+export function filterRanksByUniform(ranks: Rank[], uniform: Uniform): Rank[] {
+  return ranks.filter((rank) => {
+    return rank.uniforms.filter((_uniform) => _uniform === uniform).length > 0;
+  });
+}
+
 export default {
-  rankMeta,
   allRanks,
-  filterRanksByUniform,
+  rankMeta,
   filterRanksByCategory,
+  filterRanksByUniform,
 };

@@ -1,7 +1,5 @@
 # Canadian Armed Forces (CAF) Ranks
 
-**Current Version**: v0.7.0
-
 Ranks in the Canadian Armed Forces mark a person's position in its hierarchical structure. As people gain more responsibility and authority, they earn promotions in rank.
 
 This library enables the easy reusability of the Canadian Armed Forces Ranks within your own project.

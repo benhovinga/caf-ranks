@@ -1,6 +1,4 @@
-import { JestConfigWithTsJest } from "ts-jest";
-
-const config: JestConfigWithTsJest = {
+const config = {
   testEnvironment: "node",
   transform: {
     "^.+.tsx?$": ["ts-jest", {}],

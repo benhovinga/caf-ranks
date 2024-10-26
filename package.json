@@ -2,12 +2,14 @@
   "name": "caf-ranks",
   "version": "0.7.0",
   "description": "Library of the Canadian Armed Forces rank structure (bilingual)",
-  "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.js",
   "scripts": {
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc",
+    "build:clean": "npm run clean:lib && npm run build",
+    "clean:lib": "rm -rf ./lib",
+    "publish": "npm run build:clean && npm publish"
   },
   "files": [
     "dist"
@@ -22,7 +24,10 @@
     "canadian armed forces",
     "rank structure"
   ],
-  "author": "Ben Hovinga",
+  "author": {
+    "name": "Ben Hovinga",
+    "url": "https://github.com/benhovinga"
+  },
   "license": "OGL-Canada-2.0",
   "bugs": {
     "url": "https://github.com/benhovinga/caf-ranks/issues"
