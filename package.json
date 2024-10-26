@@ -8,8 +8,7 @@
     "test": "jest",
     "build": "tsc",
     "build:clean": "npm run clean:lib && npm run build",
-    "clean:lib": "rm -rf ./lib",
-    "publish": "npm run build:clean && npm publish"
+    "clean:lib": "rm -rf ./lib"
   },
   "files": [
     "dist"
