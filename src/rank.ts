@@ -1,7 +1,31 @@
-import Rank from "./models/Rank";
-import { Uniform } from "./types";
+import { Uniform, uniforms } from "./uniform";
+import { Category, getCategoryByLevel } from "./category";
+import { type I18nField } from "./types";
 
-const ranks: Rank[] = [
+export class Rank {
+  title: I18nField;
+  abbreviation: I18nField;
+  level: number;
+  uniforms: Uniform[];
+
+  constructor(
+    title: I18nField,
+    abbreviation: I18nField,
+    level: number,
+    uniforms: Uniform[]
+  ) {
+    this.title = title;
+    this.abbreviation = abbreviation;
+    this.level = level;
+    this.uniforms = uniforms;
+  }
+
+  get category(): Category {
+    return getCategoryByLevel(this.level);
+  }
+}
+
+export const ranks: Rank[] = [
   {
     title: { en: "General", fr: "Général" },
     abbreviation: { en: "Gen", fr: "gén" },
@@ -260,8 +284,20 @@ const ranks: Rank[] = [
       rank.title,
       rank.abbreviation,
       rank.level,
-      rank.uniforms as Uniform[]
+      rank.uniforms.map((uniform) => {
+        return uniforms[uniform as "CA" | "RCAF" | "RCN"];
+      })
     )
 );
 
-export default ranks;
+export function getRanksByCategory(category: Category): Rank[] {
+  return ranks.filter((rank) => {
+    return rank.level <= category.maxLevel && rank.level >= category.minLevel;
+  });
+}
+
+export function getRanksByUniform(uniform: Uniform): Rank[] {
+  return ranks.filter((rank) => {
+    return rank.uniforms.filter((_uniform) => _uniform === uniform).length > 0;
+  });
+}
