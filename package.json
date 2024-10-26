@@ -1,6 +1,6 @@
 {
   "name": "caf-ranks",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "Library of the Canadian Armed Forces rank structure (bilingual)",
   "main": "lib/main.js",
   "types": "lib/main.d.js",
